@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title></title>
+</head>
+<style>
+</style>
+<body>
+<form>
+    <input id="color" type="text" />
+    <input id="submitColor" value="verstuur" type="button" />
+</form>
+</body>
+<script>
+    function changeBackground() {
+        var color = document.getElementById("color").value;
+        document.background = color;
+        document.getElementById("coltext").style.color = color;
+    }
+    document.getElementById("submitColor").addEventListener("click", changeBackground, true);
+</script>
+</html>
